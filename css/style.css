@@ -1,7 +1,25 @@
 /* Remove the navbar's default margin-bottom and rounded borders */
 html {
   font-size: 16px !important;
+  overflow: scroll;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+::-webkit-scrollbar:horizontal {
+  -webkit-box-shadow: auto;
+  -webkit-border-radius: auto;
+  border-radius: auto;
+  background: auto;
+  -webkit-border-radius: auto;
+  border-radius: auto;
+  background: auto;
+  -webkit-box-shadow: auto;
+}
+
 .textContent {
   font-size: large;
   text-align: justify;
@@ -38,11 +56,11 @@ html {
   width: 100vw !important;
   margin: 0px !important;
   padding: 0px !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
 }
 
 .editorContent {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #closeDocument {
@@ -60,7 +78,7 @@ html {
   float: right !important;
 }
 .editor {
-  min-height: calc(100vh - 235px);
+  height: calc(100vh - 235px) !important;
   float: left;
   width: 100%;
 }
@@ -95,7 +113,7 @@ i {
 }
 
 #title {
-  font-size: XX-large;
+  font-size: 2em;
   font-family: "Merriweather", serif !important;
   float: left;
   text-align: left;
