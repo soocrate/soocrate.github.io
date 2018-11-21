@@ -4,6 +4,14 @@ html {
   overflow: scroll;
 }
 
+@-moz-document url-prefix() {
+  .container .hidmeinfirefox {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
@@ -61,6 +69,11 @@ html {
 }
 
 .editorContent {
+}
+
+#inputCommentModal {
+  top: 20% !important;
+  z-index: 1100 !important;
 }
 
 #closeDocument {
